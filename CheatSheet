@@ -1,0 +1,31 @@
+kubectl run hello-minikube   - to deploy an appns
+kubectl cluster-info 
+kubectl get nodes 
+____________________________________________
+./etcdctl                   
+./etcdctl set <key> <value>
+./etcdctl get <key>
+____________________________________________
+Usage:
+  kubeadm [command]
+
+Available Commands:
+  alpha       Kubeadm experimental sub-commands
+  completion  Output shell completion code for the specified shell (bash or zsh)
+  config      Manage configuration for a kubeadm cluster persisted in a ConfigMap in the cluster
+  help        Help about any command
+  init        Run this command in order to set up the Kubernetes control plane
+  join        Run this on any machine you wish to join an existing cluster
+  reset       Performs a best effort revert of changes made to this host by 'kubeadm init' or 'kubeadm join'
+  token       Manage bootstrap tokens
+  upgrade     Upgrade your cluster smoothly to a newer version with this command
+  version     Print the version of kubeadm
+______________________________________________
+
+
+
+Configuration files location :
+cat /etc/kubernetes/manifests/kube-apiserver.yaml 
+cat cat /etc/systemd/system/kube-apiserver.service
+ps aux | grep kube-apiserver                      
+/etc/kubernetes/admin.conf -> ~/.kube/.config 
